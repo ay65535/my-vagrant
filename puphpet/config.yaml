@@ -98,7 +98,7 @@ nginx:
         proxy_buffers: '4 256k'
     upstreams: {  }
     vhosts:
-        nxv_89na3d3o1x4q:
+        site:
             server_name: site.dev
             www_root: /www/web
             listen_port: '80'
@@ -155,7 +155,7 @@ apache:
         - proxy
         - rewrite
     vhosts:
-        av_fsk2us4j68qq:
+        site:
             servername: site.dev
             docroot: /www/web
             port: '80'
