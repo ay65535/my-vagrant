@@ -114,7 +114,7 @@ nginx:
         names_hash_bucket_size: 128
     upstreams: {  }
     vhosts:
-        nxv_84wn0x1idu96:
+        site:
             server_name: site.dev
             www_root: /www/web
             listen_port: '80'
@@ -178,7 +178,7 @@ apache:
         - proxy_fcgi
         - rewrite
     vhosts:
-        av_42vl8x7jkimv:
+        site:
             servername: site.dev
             docroot: /www/web
             port: '80'
