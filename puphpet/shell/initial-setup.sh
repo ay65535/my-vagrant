@@ -74,7 +74,8 @@ fi
 
 if [ "${OS}" == 'debian' ] || [ "${OS}" == 'ubuntu' ]; then
     echo 'Installing curl'
-    apt-get -y install curl
+    add-apt-repository -y ppa:costamagnagianfranco/ettercap-stable-backports
+    apt-get -y update && apt-get -y install curl
     echo 'Finished installing curl'
 
     echo 'Installing git'
