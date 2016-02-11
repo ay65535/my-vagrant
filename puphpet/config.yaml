@@ -316,20 +316,9 @@ mariadb:
         root_password: '123'
         override_options: {  }
     adminer: 0
-    users:
-        mariadbnu_easgvs6mccjb:
-            name: dbuser
-            password: '123'
-    databases:
-        mariadbnd_y62xjfglfy5o:
-            name: dbname
-            sql: ''
-    grants:
-        mariadbng_5ohtls30qfsy:
-            user: dbuser
-            table: '*.*'
-            privileges:
-                - ALL
+    users: { }
+    databases: { }
+    grants: { }
 mysql:
     install: '1'
     settings:
